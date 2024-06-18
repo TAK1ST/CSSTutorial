@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>TAK</title>
-    <style>
-      img {
-        padding: 5px;
-        max-height: 100px;
-        max-width: 100px;
-        display: inline-block;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <img src="assets/logo.png" alt="logo" />
-    </header>
-    <main class="container">
-      <h1>
-        We are a
-        <span class="highlight">Creative</span> Design Agency
-      </h1>
-      <div class="services">
-        <div class="service">
-          <img src="assets/beautiful.jpg" alt="Beautiful" />
-          <h3>Beauty</h3>
-          <p>
-            The float property is used for positioning and formatting content
-            e.g. let an image float left to the text in a container.
-          </p>
-        </div>
-        <div class="service">
-          <img src="assets/construction.jpg" alt="Construction" />
-          <h3>Construction</h3>
-          <p>
-            The @media rule is used in media queries to apply different styles
-            for different media types/devices.
-          </p>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>TAK</title>
+  <style>
+    img {
+      padding: 5px;
+      max-height: 600px; 
+      max-width: 600px; 
+    }
+    span{
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="assets/logo.png" alt="logo">
+  </header>
+  <main class="container">
+    <h1>
+      We are a
+      <span class="highlight">Creative</span> Design Agency
+    </h1>
+
+    <div class="services">
+      <div class="service" id="service1">
+        <img src="assets/beautiful.jpg" alt="Beautiful" max-width="600px" max-height="600px" />
       </div>
-    </main>
-    <footer>
-      <h5>Create. Develop. Design.</h5>
-    </footer>
-  </body>
+      <div class="paragraph1">
+        <h3>Beauty</h3>
+
+        <p>
+          The float property is used for positioning and formatting content
+          e.g. let an image float left to the text in a container.
+        </p>
+      </div>
+      <div class="service" id="service2">
+        <img src="assets/construction.jpg" alt="Construction" max-width="600px" max-height="600px" />
+
+      </div>
+      <div class="paragraph2">
+        <h3>Construction</h3>
+        <p>
+          The @media rule is used in media queries to apply different styles
+          for different media types/devices.
+        </p>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <h5>Create. Develop. Design.</h5>
+  </footer>
+</body>
+
 </html>
